@@ -1,264 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rekha Astrology - a premium consultation experience.">
-  <title>Rekha Astrology | Premium Guidance</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rekha Astrology - Vedic astrology consultation and guidance.">
+<title>Rekha Astrology | Vedic Astrology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="noise"></div>
 
-  <header class="site-header">
-    <a class="logo" href="#top" aria-label="Rekha Astrology home">
-      <span class="logo-mark">RA</span>
-      <span>REKHA <b>ASTROLOGY</b></span>
-    </a>
+<div class="stars"></div>
+<div class="constellation constellation-a"></div>
+<div class="constellation constellation-b"></div>
 
-    <nav class="nav">
-      <a href="#videos">Videos</a>
-      <a href="#awards">Awards</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header class="header">
+  <a class="brand" href="#home">
+    <span class="brand-symbol">ॐ</span>
+    <span>
+      <small>VEDIC ASTROLOGY</small>
+      <strong>REKHA ASTROLOGY</strong>
+    </span>
+  </a>
 
-    <a class="nav-cta" href="#contact">Book Consultation</a>
-    <button class="menu-btn" aria-label="Open menu">☰</button>
-  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#videos">Guidance</a>
+    <a href="#recognition">Recognition</a>
+    <a href="#stories">Stories</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
+  <a class="gold-button small" href="#contact">Consultation <span>↗</span></a>
+  <button class="menu" aria-label="Menu">☰</button>
+</header>
 
-      <div class="hero-copy reveal">
-        <p class="eyebrow">PERSONAL GUIDANCE • TRUST • EXPERIENCE</p>
-        <h1>Clarity for the<br><em>journey ahead.</em></h1>
-        <p class="hero-text">
-          Discover a premium, personal consultation experience designed to help
-          you understand your questions, patterns and next steps.
-        </p>
+<main id="home">
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#videos">Watch Introduction <span>↗</span></a>
-          <a class="button button-ghost" href="#testimonials">See Experiences</a>
-        </div>
-
-        <div class="trust-row">
-          <div><strong>01</strong><span>Personal<br>Attention</span></div>
-          <div><strong>02</strong><span>Private<br>Consultation</span></div>
-          <div><strong>03</strong><span>Clear<br>Guidance</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal delay-1">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="hero-card">
-          <div class="card-top">
-            <span>FEATURED VIDEO</span>
-            <span class="live-dot">●</span>
-          </div>
-
-          <!-- Replace with your own video file -->
-          <video class="hero-video" controls playsinline preload="metadata"
-                 poster="assets/hero-poster.jpg">
-            <source src="videos/intro.mp4" type="video/mp4">
-            Your browser does not support video.
-          </video>
-
-          <div class="video-caption">
-            <span>Begin here</span>
-            <strong>A personal introduction</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIDEO SECTION -->
-    <section class="section" id="videos">
-      <div class="section-heading reveal">
-        <div>
-          <p class="eyebrow">WATCH & DISCOVER</p>
-          <h2>Start with the <em>story.</em></h2>
-        </div>
-        <p class="section-intro">
-          Replace these placeholders with your introduction, educational and
-          service videos. The layout is designed to feel like a premium media brand.
-        </p>
-      </div>
-
-      <div class="video-grid">
-        <article class="video-card large reveal">
-          <div class="video-frame">
-            <video controls playsinline preload="metadata" poster="assets/video-1.jpg">
-              <source src="videos/video-1.mp4" type="video/mp4">
-            </video>
-            <span class="video-number">01</span>
-          </div>
-          <div class="video-info">
-            <p>INTRODUCTION</p>
-            <h3>Begin your journey</h3>
-            <span>Replace this with your first video caption.</span>
-          </div>
-        </article>
-
-        <article class="video-card reveal delay-1">
-          <div class="video-frame">
-            <video controls playsinline preload="metadata" poster="assets/video-2.jpg">
-              <source src="videos/video-2.mp4" type="video/mp4">
-            </video>
-            <span class="video-number">02</span>
-          </div>
-          <div class="video-info">
-            <p>INSIGHT</p>
-            <h3>Understanding your questions</h3>
-            <span>Replace this with your second video caption.</span>
-          </div>
-        </article>
-
-        <article class="video-card reveal delay-2">
-          <div class="video-frame">
-            <video controls playsinline preload="metadata" poster="assets/video-3.jpg">
-              <source src="videos/video-3.mp4" type="video/mp4">
-            </video>
-            <span class="video-number">03</span>
-          </div>
-          <div class="video-info">
-            <p>GUIDANCE</p>
-            <h3>What comes next?</h3>
-            <span>Replace this with your third video caption.</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- AWARDS -->
-    <section class="section awards-section" id="awards">
-      <div class="section-heading centered reveal">
-        <p class="eyebrow">RECOGNITION</p>
-        <h2>A record of <em>trust.</em></h2>
-        <p class="section-intro">
-          Add your real awards, certifications, publications or recognitions here.
-          The cards below are intentionally placeholders so the website does not make
-          claims you have not supplied.
-        </p>
-      </div>
-
-      <div class="awards-grid">
-        <article class="award-card reveal">
-          <span class="award-icon">✦</span>
-          <span class="award-year">20XX</span>
-          <h3>Your Award</h3>
-          <p>Replace with the official award name and issuing organization.</p>
-        </article>
-
-        <article class="award-card featured reveal delay-1">
-          <span class="award-icon">◇</span>
-          <span class="award-year">20XX</span>
-          <h3>Your Recognition</h3>
-          <p>Replace with your verified recognition or achievement.</p>
-        </article>
-
-        <article class="award-card reveal delay-2">
-          <span class="award-icon">✧</span>
-          <span class="award-year">20XX</span>
-          <h3>Your Certification</h3>
-          <p>Replace with your verified certification or credential.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials-section" id="testimonials">
-      <div class="section-heading reveal">
-        <div>
-          <p class="eyebrow">REAL EXPERIENCES</p>
-          <h2>Stories from <em>people.</em></h2>
-        </div>
-        <p class="section-intro">
-          Add genuine customer testimonial videos here. Avoid invented reviews or
-          claims. Each card can hold a real customer video and their approved caption.
-        </p>
-      </div>
-
-      <div class="testimonial-grid">
-        <article class="testimonial-card reveal">
-          <div class="testimonial-video">
-            <video controls playsinline preload="metadata" poster="assets/testimonial-1.jpg">
-              <source src="videos/testimonial-1.mp4" type="video/mp4">
-            </video>
-            <div class="play-label">TESTIMONIAL 01</div>
-          </div>
-          <div class="testimonial-copy">
-            <span>Customer story</span>
-            <h3>“Add the customer's real headline here.”</h3>
-            <p>Customer Name · City</p>
-          </div>
-        </article>
-
-        <article class="testimonial-card reveal delay-1">
-          <div class="testimonial-video">
-            <video controls playsinline preload="metadata" poster="assets/testimonial-2.jpg">
-              <source src="videos/testimonial-2.mp4" type="video/mp4">
-            </video>
-            <div class="play-label">TESTIMONIAL 02</div>
-          </div>
-          <div class="testimonial-copy">
-            <span>Customer story</span>
-            <h3>“Add the customer's real headline here.”</h3>
-            <p>Customer Name · City</p>
-          </div>
-        </article>
-
-        <article class="testimonial-card reveal delay-2">
-          <div class="testimonial-video">
-            <video controls playsinline preload="metadata" poster="assets/testimonial-3.jpg">
-              <source src="videos/testimonial-3.mp4" type="video/mp4">
-            </video>
-            <div class="play-label">TESTIMONIAL 03</div>
-          </div>
-          <div class="testimonial-copy">
-            <span>Customer story</span>
-            <h3>“Add the customer's real headline here.”</h3>
-            <p>Customer Name · City</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section" id="contact">
-      <div class="cta-glow"></div>
-      <div class="cta-inner reveal">
-        <p class="eyebrow">READY WHEN YOU ARE</p>
-        <h2>Your questions<br><em>deserve attention.</em></h2>
-        <p>Start a private conversation and take the next step.</p>
-        <a class="button button-primary" href="https://wa.me/919864862860" target="_blank" rel="noopener">
-          WhatsApp Consultation ↗
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">
-      <span class="logo-mark">RA</span>
-      <span>REKHA ASTROLOGY</span>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="vedic-line"><span></span> VEDIC ASTROLOGY & GUIDANCE <span></span></div>
+    <h1>Read the <i>patterns.</i><br>Understand the journey.</h1>
+    <p>
+      A private astrology experience rooted in Vedic tradition,
+      presented with clarity, care and a deeply personal approach.
+    </p>
+    <div class="hero-actions">
+      <a class="gold-button" href="#videos">Explore the Journey <span>↗</span></a>
+      <a class="text-button" href="#stories">Watch client stories</a>
     </div>
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="#top">Back to top ↑</a>
+    <div class="hero-proof">
+      <div><b>01</b><span>Personal<br>Consultation</span></div>
+      <div><b>02</b><span>Vedic<br>Approach</span></div>
+      <div><b>03</b><span>Private &<br>Confidential</span></div>
     </div>
-    <p>© <span id="year"></span> Rekha Astrology. All rights reserved.</p>
-  </footer>
+  </div>
 
-  <script src="script.js"></script>
+  <div class="cosmic-stage">
+    <div class="halo halo-one"></div>
+    <div class="halo halo-two"></div>
+    <div class="zodiac">
+      <div class="zodiac-ring outer"></div>
+      <div class="zodiac-ring middle"></div>
+      <div class="zodiac-ring inner"></div>
+      <div class="zodiac-glyphs">
+        <span>♈</span><span>♉</span><span>♊</span><span>♋</span>
+        <span>♌</span><span>♍</span><span>♎</span><span>♏</span>
+        <span>♐</span><span>♑</span><span>♒</span><span>♓</span>
+      </div>
+      <div class="center-disc">
+        <div class="sun">☉</div>
+        <small>ज्योतिष</small>
+        <strong>VEDIC<br>WISDOM</strong>
+      </div>
+    </div>
+    <div class="floating-card card-top">
+      <span>01</span><strong>Birth Chart</strong><small>Personal insight</small>
+    </div>
+    <div class="floating-card card-bottom">
+      <span>✦</span><strong>Ancient wisdom</strong><small>Modern clarity</small>
+    </div>
+  </div>
+</section>
+
+<section class="marquee">
+  <div>VEDIC ASTROLOGY <span>✦</span> BIRTH CHART <span>✦</span> GUIDANCE <span>✦</span> PERSONAL CONSULTATION <span>✦</span> VEDIC ASTROLOGY <span>✦</span></div>
+</section>
+
+<section class="intro section" id="about">
+  <div class="section-label">01 — THE APPROACH</div>
+  <div class="intro-content">
+    <div>
+      <p class="gold-kicker">A MORE PERSONAL WAY TO EXPLORE ASTROLOGY</p>
+      <h2>Ancient knowledge.<br><i>Human questions.</i></h2>
+    </div>
+    <div class="intro-text">
+      <p>
+        Astrology can be a language for reflection, timing and perspective.
+        The goal of a consultation is not to overwhelm you with terminology,
+        but to create a thoughtful conversation around the questions that matter to you.
+      </p>
+      <a class="line-link" href="#contact">Begin a private conversation <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="video-section section" id="videos">
+  <div class="section-head">
+    <div>
+      <div class="section-label">02 — GUIDANCE</div>
+      <h2>Start with a <i>conversation.</i></h2>
+    </div>
+    <p>Watch the introduction and explore the philosophy behind the consultation experience.</p>
+  </div>
+
+  <div class="featured-video">
+    <div class="video-shell">
+      <video controls playsinline preload="metadata" poster="assets/hero-poster.jpg">
+        <source src="videos/intro.mp4" type="video/mp4">
+      </video>
+      <div class="video-corner">REKHA ASTROLOGY / 01</div>
+    </div>
+    <div class="featured-copy">
+      <div class="play-mark">▶</div>
+      <p class="gold-kicker">FEATURED INTRODUCTION</p>
+      <h3>Before the chart,<br><i>there is the person.</i></h3>
+      <p>Replace this section with your real introduction video and your own message.</p>
+      <a class="line-link" href="#contact">Explore consultation <span>→</span></a>
+    </div>
+  </div>
+
+  <div class="mini-videos">
+    <article>
+      <div class="mini-video"><video controls playsinline poster="assets/video-1.jpg"><source src="videos/video-1.mp4" type="video/mp4"></video><span>02</span></div>
+      <small>VEDIC INSIGHT</small><h3>Understanding the chart</h3>
+    </article>
+    <article>
+      <div class="mini-video"><video controls playsinline poster="assets/video-2.jpg"><source src="videos/video-2.mp4" type="video/mp4"></video><span>03</span></div>
+      <small>GUIDANCE</small><h3>Questions that matter</h3>
+    </article>
+    <article>
+      <div class="mini-video"><video controls playsinline poster="assets/video-3.jpg"><source src="videos/video-3.mp4" type="video/mp4"></video><span>04</span></div>
+      <small>THE JOURNEY</small><h3>Finding your perspective</h3>
+    </article>
+  </div>
+</section>
+
+<section class="recognition section" id="recognition">
+  <div class="section-label">03 — RECOGNITION</div>
+  <div class="recognition-head">
+    <h2>Experience is<br><i>earned, not announced.</i></h2>
+    <p>Add your genuine awards, certifications, publications or recognitions here. These cards contain placeholders until you provide the real information.</p>
+  </div>
+
+  <div class="award-row">
+    <article class="award">
+      <div class="medallion">✦</div>
+      <small>20XX</small>
+      <h3>Your Award</h3>
+      <p>Official award or recognition</p>
+    </article>
+    <article class="award featured-award">
+      <div class="medallion">ॐ</div>
+      <small>20XX</small>
+      <h3>Your Recognition</h3>
+      <p>Issuing organization / publication</p>
+    </article>
+    <article class="award">
+      <div class="medallion">◇</div>
+      <small>20XX</small>
+      <h3>Your Certification</h3>
+      <p>Verified credential or achievement</p>
+    </article>
+  </div>
+</section>
+
+<section class="stories section" id="stories">
+  <div class="section-head">
+    <div>
+      <div class="section-label">04 — REAL STORIES</div>
+      <h2>Words from the<br><i>people we meet.</i></h2>
+    </div>
+    <p>Use genuine customer videos and only publish testimonials with appropriate permission.</p>
+  </div>
+
+  <div class="story-grid">
+    <article class="story">
+      <div class="story-video"><video controls playsinline poster="assets/testimonial-1.jpg"><source src="videos/testimonial-1.mp4" type="video/mp4"></video><span>STORY 01</span></div>
+      <div class="story-copy"><small>CLIENT EXPERIENCE</small><h3>“Your real testimonial headline goes here.”</h3><p>Customer Name · City</p></div>
+    </article>
+    <article class="story">
+      <div class="story-video"><video controls playsinline poster="assets/testimonial-2.jpg"><source src="videos/testimonial-2.mp4" type="video/mp4"></video><span>STORY 02</span></div>
+      <div class="story-copy"><small>CLIENT EXPERIENCE</small><h3>“Your real testimonial headline goes here.”</h3><p>Customer Name · City</p></div>
+    </article>
+    <article class="story">
+      <div class="story-video"><video controls playsinline poster="assets/testimonial-3.jpg"><source src="videos/testimonial-3.mp4" type="video/mp4"></video><span>STORY 03</span></div>
+      <div class="story-copy"><small>CLIENT EXPERIENCE</small><h3>“Your real testimonial headline goes here.”</h3><p>Customer Name · City</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="cta section" id="contact">
+  <div class="cta-wheel">
+    <div class="tiny-wheel">☉</div>
+  </div>
+  <div class="cta-content">
+    <div class="section-label">05 — PRIVATE CONSULTATION</div>
+    <h2>Bring your question.<br><i>Start the conversation.</i></h2>
+    <p>For a private consultation, connect directly on WhatsApp.</p>
+    <a class="gold-button" href="https://wa.me/919864862860" target="_blank" rel="noopener">WhatsApp Consultation <span>↗</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-brand"><span class="brand-symbol">ॐ</span><div><small>VEDIC ASTROLOGY</small><strong>REKHA ASTROLOGY</strong></div></div>
+  <div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="#home">Back to top ↑</a></div>
+  <p>© <span id="year"></span> Rekha Astrology</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
