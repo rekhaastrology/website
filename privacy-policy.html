@@ -3,49 +3,730 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Privacy Policy | Rekha Astrology</title>
-  <meta name="description" content="Privacy Policy for Rekha Astrology.">
-  <link rel="stylesheet" href="style.css">
+
+  <meta
+    name="description"
+    content="Privacy Policy for Rekha Astrology. Learn how we collect, use, protect and manage personal information."
+  >
+
+  <style>
+    :root {
+      --bg: #080b12;
+      --surface: #10151f;
+      --surface-light: #151c28;
+      --gold: #d4aa5a;
+      --gold-light: #f0d38f;
+      --text: #eee8dc;
+      --muted: #a7a4a0;
+      --border: rgba(212, 170, 90, 0.18);
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(212, 170, 90, 0.12),
+          transparent 40%
+        ),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.8;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.12;
+      background-image:
+        radial-gradient(circle, #fff 0.7px, transparent 0.8px);
+      background-size: 120px 120px;
+    }
+
+    a {
+      color: var(--gold-light);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(8, 11, 18, 0.88);
+      backdrop-filter: blur(18px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand-symbol {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      font-size: 19px;
+    }
+
+    .brand-text small {
+      display: block;
+      color: var(--gold);
+      font-size: 8px;
+      letter-spacing: 2.5px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+    }
+
+    .back-link {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 90px 24px 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 25px auto 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .updated {
+      margin-top: 25px !important;
+      font-size: 11px !important;
+      color: #777b83 !important;
+    }
+
+    /* CONTENT */
+
+    .policy {
+      max-width: var(--max-width);
+      margin: 0 auto 100px;
+      padding: 0 24px;
+    }
+
+    .policy-card {
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,0.035),
+          rgba(255,255,255,0.012)
+        );
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(28px, 6vw, 65px);
+      box-shadow:
+        0 30px 100px rgba(0,0,0,0.28);
+    }
+
+    section {
+      padding-bottom: 38px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-weight: 400;
+      margin: 0 0 15px;
+    }
+
+    h3 {
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
+      margin: 25px 0 8px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    li {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      padding: 20px;
+      margin: 22px 0;
+      border-left: 2px solid var(--gold);
+      background: rgba(212,170,90,0.05);
+    }
+
+    .highlight p {
+      margin: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 11px;
+      margin: 5px 0;
+      color: #70737a;
+    }
+
+    .footer-brand {
+      color: var(--gold);
+      font-family: Georgia, serif;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      .header-inner {
+        padding: 17px 18px;
+      }
+
+      .back-link {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 20px 45px;
+      }
+
+      .policy {
+        padding: 0 15px;
+      }
+
+      .policy-card {
+        padding: 28px 22px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <main class="page">
-    <article class="policy">
-      <div class="brand">REKHA ASTROLOGY</div>
-      <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: August 15, 2026</p>
 
-      <h2>1. Introduction</h2>
-      <p>This Privacy Policy explains how Rekha Astrology may collect, use, and protect information provided by people who contact us or use our services.</p>
+<header>
+  <div class="header-inner">
 
-      <h2>2. Information We May Collect</h2>
-      <p>Depending on how you contact us, we may receive information such as your name, phone number, messages, images, and other information that you voluntarily send to us.</p>
+    <a class="brand" href="index.html">
 
-      <h2>3. WhatsApp Communications</h2>
-      <p>If you contact us through WhatsApp, we may process the messages, media, and contact information you send to us in order to respond to your requests, provide our services, and manage our customer communications.</p>
+      <span class="brand-symbol">ॐ</span>
 
-      <h2>4. How We Use Information</h2>
-      <p>Information may be used to communicate with you, provide requested services, maintain customer records, improve our services, and operate our communication systems.</p>
+      <span class="brand-text">
+        <small>VEDIC ASTROLOGY</small>
+        <strong>REKHA ASTROLOGY</strong>
+      </span>
 
-      <h2>5. Sharing of Information</h2>
-      <p>We do not sell personal information. Information may be processed by service providers that help us operate our website, messaging, hosting, storage, or other business systems.</p>
+    </a>
 
-      <h2>6. Data Security</h2>
-      <p>We take reasonable measures to protect information from unauthorized access, alteration, disclosure, or destruction. No internet-based system can be guaranteed to be completely secure.</p>
+    <a class="back-link" href="index.html">
+      ← Back to website
+    </a>
 
-      <h2>7. Data Retention</h2>
-      <p>We may retain information for as long as reasonably necessary for the purposes described in this policy, including customer service, business records, legal obligations, and dispute resolution.</p>
+  </div>
+</header>
 
-      <h2>8. Your Choices</h2>
-      <p>You may contact us to ask about information associated with your communications or to request deletion where applicable and legally permitted.</p>
 
-      <h2>9. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised date.</p>
+<main>
 
-      <h2>10. Contact</h2>
-      <p>For privacy-related questions, please contact Rekha Astrology through the communication channel you used to reach us.</p>
+  <div class="hero">
 
-      <a class="back" href="index.html">← Back to home</a>
-    </article>
-  </main>
+    <div class="eyebrow">
+      Privacy & Data Protection
+    </div>
+
+    <h1>Privacy Policy</h1>
+
+    <p>
+      Your privacy matters to us. This policy explains how Rekha Astrology
+      collects, uses, stores and protects information that you provide when
+      visiting our website or communicating with us.
+    </p>
+
+    <p class="updated">
+      Last Updated: August 15, 2026
+    </p>
+
+  </div>
+
+
+  <div class="policy">
+
+    <div class="policy-card">
+
+
+      <!-- 1 -->
+
+      <section>
+
+        <h2>1. Introduction</h2>
+
+        <p>
+          Rekha Astrology ("we", "us", "our" or "Rekha Astrology")
+          respects your privacy and is committed to protecting the
+          personal information you provide to us.
+        </p>
+
+        <p>
+          This Privacy Policy explains how information may be collected,
+          used, stored and handled when you visit our website, contact us,
+          or use our services.
+        </p>
+
+      </section>
+
+
+      <!-- 2 -->
+
+      <section>
+
+        <h2>2. Information We May Collect</h2>
+
+        <p>
+          Depending on how you interact with us, we may receive information
+          that you voluntarily provide, including:
+        </p>
+
+        <ul>
+          <li>Name or preferred name</li>
+          <li>Mobile or WhatsApp phone number</li>
+          <li>Date of birth, when voluntarily provided for an astrology consultation</li>
+          <li>Messages and questions you send to us</li>
+          <li>Images, photographs, documents, audio or video that you voluntarily send</li>
+          <li>Information relating to your consultation request</li>
+          <li>Technical information such as browser type, device information and basic website usage information</li>
+        </ul>
+
+        <p>
+          You are not required to provide information that is not necessary
+          for the particular service or communication you request.
+        </p>
+
+      </section>
+
+
+      <!-- 3 -->
+
+      <section>
+
+        <h2>3. WhatsApp Communications</h2>
+
+        <p>
+          If you contact Rekha Astrology through WhatsApp, your communication
+          may be processed through WhatsApp and the systems used by us to
+          manage customer communications.
+        </p>
+
+        <p>
+          This may include receiving and processing messages, phone numbers,
+          images, videos, audio, documents and other media that you
+          voluntarily send to us.
+        </p>
+
+        <div class="highlight">
+
+          <p>
+            We use information received through WhatsApp primarily to
+            communicate with you, respond to your requests and provide
+            services that you have requested.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 4 -->
+
+      <section>
+
+        <h2>4. Astrology Information</h2>
+
+        <p>
+          If you voluntarily provide information such as your date of birth,
+          time of birth, place of birth or other information for an astrology
+          consultation, that information may be used to prepare or provide
+          the requested astrology-related service.
+        </p>
+
+        <p>
+          You should only provide information that you are comfortable
+          sharing for this purpose.
+        </p>
+
+      </section>
+
+
+      <!-- 5 -->
+
+      <section>
+
+        <h2>5. How We Use Information</h2>
+
+        <p>
+          Information may be used for legitimate business and communication
+          purposes, including:
+        </p>
+
+        <ul>
+          <li>Responding to your messages and enquiries</li>
+          <li>Providing requested consultations or services</li>
+          <li>Managing customer communications</li>
+          <li>Sending requested information, videos or other communications</li>
+          <li>Maintaining business and customer records</li>
+          <li>Improving our website and services</li>
+          <li>Preventing abuse, fraud or unauthorized activity</li>
+          <li>Complying with applicable legal obligations</li>
+        </ul>
+
+      </section>
+
+
+      <!-- 6 -->
+
+      <section>
+
+        <h2>6. Automated Communications</h2>
+
+        <p>
+          Our communication systems may use automated technology to organize
+          customer conversations and send messages or media that are part of
+          a requested communication or service flow.
+        </p>
+
+        <p>
+          Automated systems may process information such as your phone number,
+          conversation stage and messages in order to deliver the relevant
+          communication.
+        </p>
+
+      </section>
+
+
+      <!-- 7 -->
+
+      <section>
+
+        <h2>7. Service Providers</h2>
+
+        <p>
+          We may use third-party technology providers to operate parts of
+          our website, communications, storage and business infrastructure.
+        </p>
+
+        <p>
+          Depending on the services used, these providers may process
+          information on our behalf for purposes such as hosting, data
+          storage, messaging and website operation.
+        </p>
+
+        <p>
+          Such providers may include communication, hosting, database and
+          infrastructure services.
+        </p>
+
+      </section>
+
+
+      <!-- 8 -->
+
+      <section>
+
+        <h2>8. Information Sharing</h2>
+
+        <p>
+          We do not sell your personal information.
+        </p>
+
+        <p>
+          Information may be disclosed where reasonably necessary to:
+        </p>
+
+        <ul>
+          <li>Operate our website and services</li>
+          <li>Provide requested communications or services</li>
+          <li>Work with service providers supporting our business</li>
+          <li>Comply with legal requirements</li>
+          <li>Protect our rights, users or property</li>
+          <li>Prevent fraud, abuse or security threats</li>
+        </ul>
+
+      </section>
+
+
+      <!-- 9 -->
+
+      <section>
+
+        <h2>9. Data Security</h2>
+
+        <p>
+          We take reasonable technical and organizational measures to
+          protect information against unauthorized access, misuse,
+          alteration, disclosure or destruction.
+        </p>
+
+        <p>
+          However, no website, online service, database or internet
+          transmission can be guaranteed to be completely secure.
+        </p>
+
+      </section>
+
+
+      <!-- 10 -->
+
+      <section>
+
+        <h2>10. Data Retention</h2>
+
+        <p>
+          We may retain information for as long as reasonably necessary
+          for the purposes described in this Privacy Policy, including
+          providing services, maintaining business records, resolving
+          disputes and meeting legal obligations.
+        </p>
+
+        <p>
+          Retention periods may vary depending on the type and purpose
+          of the information.
+        </p>
+
+      </section>
+
+
+      <!-- 11 -->
+
+      <section>
+
+        <h2>11. Your Privacy Choices</h2>
+
+        <p>
+          Depending on applicable law, you may have rights regarding
+          personal information that we hold about you.
+        </p>
+
+        <p>
+          You may contact us to ask questions about your information or
+          request deletion or correction where applicable and legally
+          permitted.
+        </p>
+
+      </section>
+
+
+      <!-- 12 -->
+
+      <section>
+
+        <h2>12. Children's Privacy</h2>
+
+        <p>
+          Our services are not intentionally directed toward children
+          who are unable to provide appropriate consent or authorization.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information
+          to us without appropriate authorization, please contact us.
+        </p>
+
+      </section>
+
+
+      <!-- 13 -->
+
+      <section>
+
+        <h2>13. External Websites and Services</h2>
+
+        <p>
+          Our website or communications may contain links to third-party
+          websites or services.
+        </p>
+
+        <p>
+          We are not responsible for the privacy practices, security or
+          content of third-party websites. We recommend reviewing the
+          privacy policies of those services before providing information.
+        </p>
+
+      </section>
+
+
+      <!-- 14 -->
+
+      <section>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes in our services, technology, legal requirements or
+          business practices.
+        </p>
+
+        <p>
+          When changes are made, the updated version will be published
+          on this page together with a revised "Last Updated" date.
+        </p>
+
+      </section>
+
+
+      <!-- 15 -->
+
+      <section>
+
+        <h2>15. Contact Us</h2>
+
+        <p>
+          If you have questions about this Privacy Policy, your personal
+          information, or our privacy practices, please contact Rekha
+          Astrology through the official communication channel provided
+          on our website.
+        </p>
+
+        <p>
+          <strong>Rekha Astrology</strong><br>
+          India
+        </p>
+
+      </section>
+
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-brand">
+    REKHA ASTROLOGY
+  </div>
+
+  <p>
+    © <span id="year"></span> Rekha Astrology. All rights reserved.
+  </p>
+
+  <p>
+    <a href="index.html">Return to website</a>
+  </p>
+
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
 </body>
 </html>
